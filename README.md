@@ -39,3 +39,26 @@ If you wish to contribute code, offer fixes or improvements, please send a pull 
 
 ## License
 Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
+
+## for launch.json
+![image](https://github.com/mariakisel/BTP-CAP/assets/43352302/4623a34a-229e-4de7-96ec-fa306091677f)
+
+{
+    "version": "0.2.0",
+    "configurations": [{
+        "name": "Risks",
+        "request": "launch",
+        "type": "pwa-node",
+        "cwd": "${workspaceFolder}/",
+        "runtimeExecutable": "npm",
+        "args": [
+            "run-script",
+            "watch"
+        ],
+        "console": "internalConsole",
+        "internalConsoleOptions": "openOnSessionStart",
+        "skipFiles": [
+            "<node_internals>/**"
+        ]
+    }],    
+}
